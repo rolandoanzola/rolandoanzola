@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @rolandoanzola
 - 👀 I’m interested in Data Science, ML, help solve business issues
 - 🌱 I’m currently learning GCP tools
-- 💞️ I’m looking to collaborate on BigQuery ML, VertexAI, and similar solutions
+- 💞️ I’m looking to collaborate on Machine Learning and AI implementations to business issues and similar solutions
 - 📫 How to reach me: rolandoanzola@gmail.com
 
 <!---
