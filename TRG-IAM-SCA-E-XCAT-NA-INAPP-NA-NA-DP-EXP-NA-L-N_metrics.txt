@@ -1,3 +1,26 @@
+def extract_indicators(data):
+    if isinstance(data, dict):
+        if "time" in data and "total_stats" in data:
+            date = data["time"]
+            total_stats = data["total_stats"]
+            indicators = {
+                "date": date,
+                "revenue": total_stats.get("revenue", None),
+                "entries": total_stats.get("entries", None),
+                "conversions": total_stats.get("conversions", None),
+                "conversions_by_entry_time": total_stats.get("conversions_by_entry_time", None)
+            }
+            print(indicators)
+
+        for value in data.values():
+            extract_indicators(value)
+    elif isinstance(data, list):
+        for item in data:
+            extract_indicators(item)
+
+# Supongamos que 'data' es el contenido del JSON que has proporcionado
+extract_indicators(data['data']['stats'])
+
 {
     "data": {
         "name": "TRG-IAM-SCA-E-XCAT-NA-INAPP-NA-NA-DP-EXP-NA-L-N",
